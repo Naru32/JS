@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #GP{
+            height: 400px;
+            width: 400px;
+            background-color: #ff0000;
+            color: azure;
+        }
+        #Parent{
+              height: 300px;
+            width: 300px;
+            background-color: cadetblue;
+            color: powderblue;
+            padding: 20px;
+        }
+        #Child{
+              height: 200px;
+            width: 200px;
+            background-color: oldlace;
+            color: teal;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="GP">
+        Grand Parent
+        <div id="Parent">
+            Parent
+            <div id="Child">
+                Child
+            </div>
+        </div>
+    </div>
+    <script src="./event.js"></script>
+</body>
+</html>

@@ -67,3 +67,31 @@ let resR = age.reduce((acc,val)=>{
 },0)
 
 console.log("sum of ages" , resR);
+
+
+// Array destructuring
+
+let arrD = [10,20,30,40,50,60]
+
+let [E1,,,E2,E3] = arrD
+
+console.log(E1,E2,E3);
+
+// object destructuring - unpacking the specific values
+
+let obj = {
+    name:'Narendra',
+    age:24,
+    address:{
+        city:'Surat',
+        State:"GJ",
+        pin:394210
+    },
+    contact:57869708
+}
+
+let {address:{city,pin},contact} = obj
+ 
+
+
+console.log(city,pin,contact);
